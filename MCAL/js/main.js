@@ -1,3 +1,5 @@
+// =========================== SLIDER ========================================= //
+
 const slides = document.querySelectorAll('.slide');
 const slidesNav = document.querySelectorAll('.slide-circle');
 const auto = true;
@@ -32,3 +34,18 @@ const autoslide = () => {
 if(auto){
     slideInterval = setInterval(autoslide,intervalTime);
 }
+
+// ========================== REQUEST FORM MODAL ====================================== //
+
+document.getElementById('request-button').addEventListener('click',function(){
+
+    if(document.getElementById('request-modal').style.display = "none"){
+        document.getElementById('request-modal').style.display = "block";
+    }
+});
+document.getElementById('close-btn').addEventListener('click',function(){
+
+    if(document.getElementById('request-modal').style.display = "block"){
+        document.getElementById('request-modal').style.display = "none";
+    }
+})
