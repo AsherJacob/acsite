@@ -48,6 +48,7 @@ body::-webkit-scrollbar-thumb {
     /* background-color: yellow; */
     background-color: var(--white-color);
     height:130px;
+    width:100%;
 }
 
 .header-top{
@@ -117,7 +118,7 @@ body::-webkit-scrollbar-thumb {
 .showcase{
     display:grid;
     grid-template-columns: 70% 30%;
-    grid-auto-rows: calc(100vh - 130px);;
+    grid-auto-rows: calc(100vh - 130px);
 }
 
 
@@ -565,6 +566,21 @@ body::-webkit-scrollbar-thumb {
         margin-left:auto;
         font-size:1.7rem;
         color:var(--red-color);
+    }
+
+    .side-nav{
+    display: block;
+    height: 100%;
+    width:0;
+    position: fixed;
+    z-index: 2;
+    top:0;
+    left:0;
+    background-color:#111;
+    opacity:0.9;
+    overflow-x:hidden;
+    padding-top:60px;
+    transition:0.5s;
     }
 
     .logo{

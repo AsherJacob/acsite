@@ -12,20 +12,25 @@
 <body>
     <div class="container">
         <header id="header-section" class="header">
+            <!-- BANNER -->
             <div class="header-top">
+                <!-- LOGO -->
                 <div class="brand">
                     <img src="img/logo.jpeg" alt="" class="logo">
                     <h3 class="logo-text"><span style="color:#2B51B4">MICHEAL</span> <span style="color:#FF2B3E">CALAMUSA</span></h3>
                 </div>
         
+                <!-- PHONE -->
                 <div class="header-phone">
                     <h3>TORONTO   437-999-6225</h3>
                     <h3>BELEVILLE 613-999-6225</h3>
                 </div>
-                <span class="material-icons menu">menu</span>
-            </div>
-            
 
+                <!-- MENU ICON -->
+                <span class="material-icons menu open-slide" onclick="openSlideMenu()">menu</span>
+            </div>
+
+            <!-- NAVBAR MENU -->
             <div class="navbar">
                 <ul class="navbar-items">
                     <li class="navbar-item"><a href="residential.html">RESIDENTIAL</a></li>
@@ -37,6 +42,17 @@
             </div>
         </header>
 
+        <!-- SIDEBAR MENU -->
+        <div id="side-menu" class="side-nav">
+            <span class="btn-close" onclick="closeSlideMenu()">&times;</span>
+            <a href="#">RESIDENTIAL</a>
+            <a href="#">COMMERCIAL</a>
+            <a href="#">PROJECT GALLERY</a>
+            <a href="#">PROMOTIONS</a>
+            <a href="#">CONTACT US</a>
+        </div>
+       
+        <!-- SLIDESHOW -->
         <section id="slider" class="showcase">
             <div class="slider-wrapper">
                 <div class="slider">
@@ -84,26 +100,30 @@
                 </div>
             </div>
             
-            
+            <!-- REQUEST A QUOTE -->
             <div class="request-quote">
                 <div class="request-quote-header">
                     <h2>REQUEST A QUOTE</h2>
                 </div>
 
                 <div class="request-quote-fields">
+                    <!-- NAME -->
                     <div class="name-field">
                         <input type="text" name="first-name" id="first-name" placeholder="First Name" class="request-input">
                         <input type="text" name="last-name" id="last-name" placeholder="Last Name" class="request-input">
                     </div>
 
+                    <!-- PHONE -->
                     <div class="phone-number-field">
                         <input type="text" name="phone-number" id="phone-number" placeholder="Phone Number" class="request-input">
                     </div>
 
+                    <!-- EMAIL -->
                     <div class="email-field">
                         <input type="email" name="email" id="email" placeholder="Email" class="request-input">
                     </div>
 
+                    <!-- INTEREST -->
                     <div class="interested-field">
                         <select name="interested" id="interested" class="request-input">
                             <option value="Furnace">Furnace</option>
@@ -117,19 +137,20 @@
                         </select>
                     </div>
 
+                    <!-- COMMENTS -->
                     <div class="comments-field">
                         <textarea name="" id="" cols="30" rows="10" placeholder="Comments" class="request-input"></textarea>
                     </div>
 
+                    <!-- SUBMIT -->
                     <div class="submit">
                         <input type="submit" value="Submit Quote"> 
                     </div>
                 </div>
             </div>
-            
-            
         </section>
 
+        <!-- ABOUT -->
         <section id="about-section" class="about-section">
             <div class="about">
                 <div class="about-header">
@@ -145,10 +166,9 @@
                     <p>We are specialized in Sales, Service & Installation of Residential & Commercial</p>    
                 </div>
             </div>
-
-            
         </section>
 
+        <!-- SERVICES -->
         <section class="services-section">
             <h2>Furnace</h2>
             <h2>Boilers</h2>
@@ -162,6 +182,7 @@
             <h2>Fuel Gas</h2>
         </section>
 
+        <!-- PROJECT GALLERY -->
         <section id="gallery-section" class="gallery-section">
             <div class="gallery-header">
                 <h2>PHOTO GALLERY</h2>
@@ -195,16 +216,17 @@
                 <div class="gallery-image">
                     <div class="overlay"></div>
                 </div>
-                
             </div>
         </section>
 
+        <!-- CONTACT US -->
         <section id="contact-section" class="contact-section">
             <div class="contact-header">
                 <h2>Contact</h2>
             </div>
 
             <div class="content">
+                <!-- ADDRESS -->
                 <div class="address-details">
                     <div class="address-icon">
                         <span class="material-icons">location_on</span>
@@ -216,6 +238,7 @@
                     </div>
                 </div>
 
+                <!-- PHONE -->
                 <div class="phone-details">
                     <div class="phone-icon">
                         <span class="material-icons">local_phone</span>
@@ -228,11 +251,13 @@
                 </div>
             </div>
 
+            <!-- GOOGLE MAP -->
             <div class="map-section">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.28706382769!2d76.97914391377482!3d8.471441793908818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05baee7871dc6d%3A0x44f0c0fef4419c4f!2sPappanamcode%20KSRTC%20Bus%20Station!5e0!3m2!1sen!2sin!4v1590579571992!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;margin-top:20px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </section>
 
+        <!-- FOOTER -->
         <footer id="footer-section" class="footer-section">
             <div class="icons-container">
                 <i class="fab fa-facebook"></i>
@@ -244,7 +269,17 @@
         </footer>
     </div>
 
+    <!-- EXTERNAL JAVASCRIPT -->
     <script src="js/main.js"></script>
 
+    <!-- SIDEBAR MENU JAVASCRIPT -->
+    <script>
+        function openSlideMenu(){
+            document.getElementById('side-menu').style.width='250px';
+        }
+        function closeSlideMenu(){
+            document.getElementById('side-menu').style.width='0';
+        }
+    </script>
 </body>
 </html>
