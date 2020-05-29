@@ -104,52 +104,51 @@
             <!-- REQUEST A QUOTE -->
             <div class="request-quote">
                 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-                         <div class="request-quote-header">
-                    <h2>REQUEST A QUOTE</h2>
-                  
-                </div>
-
-                <div class="request-quote-fields">
-                    <!-- NAME -->
-                    <div class="name-field">
-                        <input type="text" name="fname" id="fname" placeholder="First Name" class="request-input" required >
-                        <input type="text" name="lname" id="lname" placeholder="Last Name" class="request-input" required >
+                    <div class="request-quote-header">
+                        <h2>REQUEST A QUOTE</h2>
                     </div>
 
-                    <!-- PHONE -->
-                    <div class="phone-number-field">
-                        <input type="text" name="phone" id="phone" placeholder="Phone Number" class="request-input" >
-                    </div>
+                    <div class="request-quote-fields">
+                        <!-- NAME -->
+                        <div class="name-field">
+                            <input type="text" name="fname" id="fname" placeholder="First Name" class="request-input" required >
+                            <input type="text" name="lname" id="lname" placeholder="Last Name" class="request-input" required >
+                        </div>
 
-                    <!-- EMAIL -->
-                    <div class="email-field">
-                        <input type="email" name="email" id="email" placeholder="Email" class="request-input" required>
-                    </div>
+                        <!-- PHONE -->
+                        <div class="phone-number-field">
+                            <input type="text" name="phone" id="phone" placeholder="Phone Number" class="request-input" >
+                        </div>
 
-                    <!-- INTEREST -->
-                    <div class="interested-field">
-                        <select name="interested" id="interested" class="request-input">
-                            <option value="Furnace">Furnace</option>
-                            <option value="Boiler">Boiler</option>
-                            <option value="Air Conditioning">Air Conditioning</option>
-                            <option value="Ductless Air Condiioning">Ductless Air Condiioning</option>
-                            <option value="Water Heater">Water Heater</option>
-                            <option value="Tankless Water Heater">Tankless Water Heater</option>
-                            <option value="Air Quality">Air Quality</option>
-                            <option value="Infloor Heating">Infloor heating</option>
-                        </select>
-                    </div>
+                        <!-- EMAIL -->
+                        <div class="email-field">
+                            <input type="email" name="email" id="email" placeholder="Email" class="request-input" required>
+                        </div>
 
-                    <!-- COMMENTS -->
-                    <div class="comments-field">
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Comments" class="request-input" required></textarea>
-                    </div>
+                        <!-- INTEREST -->
+                        <div class="interested-field">
+                            <select name="interested" id="interested" class="request-input">
+                                <option value="Furnace">Furnace</option>
+                                <option value="Boiler">Boiler</option>
+                                <option value="Air Conditioning">Air Conditioning</option>
+                                <option value="Ductless Air Condiioning">Ductless Air Condiioning</option>
+                                <option value="Water Heater">Water Heater</option>
+                                <option value="Tankless Water Heater">Tankless Water Heater</option>
+                                <option value="Air Quality">Air Quality</option>
+                                <option value="Infloor Heating">Infloor heating</option>
+                            </select>
+                        </div>
 
-                    <!-- SUBMIT -->
-                    <div class="submit">
-                        <input type="submit" value="Submit Quote"> 
+                        <!-- COMMENTS -->
+                        <div class="comments-field">
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Comments" class="request-input" required></textarea>
+                        </div>
+
+                        <!-- SUBMIT -->
+                        <div class="submit">
+                            <input type="submit" value="Submit Quote"> 
+                        </div>
                     </div>
-                </div>
                 </form>
             </div>
         </section>

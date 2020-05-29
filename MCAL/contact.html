@@ -10,7 +10,7 @@
     <title>MCAL | Residential</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container contact-page">
         <header id="header-section" class="header">
             <div class="header-top">
                 <div class="brand">
@@ -33,27 +33,45 @@
                     <li class="navbar-item">AIR CONDITIONING</li>
                     <li class="navbar-item">WATER HEATERS</li>
                     <li class="navbar-item">AIR QUALITY</li>
-                    <li class="navbar-item"><a href="contact.html">CONTACT US</a></li>
+                    <li class="navbar-item">CONTACT US</li>
                 </ul>
             </div>
         </header>
 
-        <section class="residential-section">
-            <div class="residential-header">
-                <h2>RESIDENTIAL PRODUCTS</h2>
+        <section id="contact-section" class="contact-section">
+            <div class="contact-header">
+                <h2>CONTACT US</h2>
             </div>
 
-            <div class="residential-content">
-                <div class="residential-details">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                
-                <div class="residential-images">
-                    <div class="residential-image">
-
+            <div class="content">
+                <!-- ADDRESS -->
+                <div class="address-details">
+                    <div class="address-icon">
+                        <span class="material-icons">location_on</span>
                     </div>
-                    <div class="residential-image"></div>
+
+                    <div class="address-content">
+                        <h3>Address</h3>
+                        <p>45th West Avenue,<br>Boulevard of broken dreams,<br>Toronto</p>
+                    </div>
                 </div>
+
+                <!-- PHONE -->
+                <div class="phone-details">
+                    <div class="phone-icon">
+                        <span class="material-icons">local_phone</span>
+                    </div>
+
+                    <div class="phone-content">
+                        <h3>Phone</h3>
+                        <p>+1 (437) 999-6225</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GOOGLE MAP -->
+            <div class="map-section">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.28706382769!2d76.97914391377482!3d8.471441793908818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05baee7871dc6d%3A0x44f0c0fef4419c4f!2sPappanamcode%20KSRTC%20Bus%20Station!5e0!3m2!1sen!2sin!4v1590579571992!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;margin-top:20px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </section>
 
@@ -110,6 +128,16 @@
         <div class="request-quote-button">
             <button class="request-button" id="request-button">Request a quote</button>
         </div>
+
+        <footer id="footer-section" class="footer-section">
+            <div class="icons-container">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-twitter"></i>                
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </footer>
     </div>
 
     <script src="js/main.js"></script>
