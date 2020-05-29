@@ -490,6 +490,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+/* ========================= RESIDENTIAL & COMMERCIALSECTION ================================ */
 
 /* ========================= RESIDENTIAL SECTION ================================ */
 
@@ -499,19 +500,19 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--white-color);
 }
 
-.residential-header{
+.residential-header, .commercial-header{
     text-align: center;
     font-size: 1.2rem;
     color: #14329e;
 }
 
-.residential-content{
+.residential-content, .commercial-content{
     padding:30px 50px;
     font-size:0.9rem;
     line-height:1.7rem;
 }
 
-.residential-images{
+.residential-images, .commercial-images{
     width:90%;
     margin:auto;
     display:grid;
@@ -524,6 +525,13 @@ body::-webkit-scrollbar-thumb {
 
 .residential-image:first-child{
     background: url(../img/slider/slide-image-4.jpg);
+}
+
+.commercial-image:first-child{
+    background: url(../img/slider/slide-image-3.jpg);
+}
+
+.residential-image:first-child, .commercial-image:first-child{
     background-repeat: no-repeat;
     background-size: 100% 100%;
     object-fit: cover;
@@ -531,6 +539,13 @@ body::-webkit-scrollbar-thumb {
 
 .residential-image:nth-child(2){
     background: url(../img/slider/slide-image-4.jpg);
+}
+
+.commercial-image:nth-child(2){
+    background: url(../img/slider/slide-image-4.jpg);
+}
+
+.residential-image:nth-child(2), .commercial-image:nth-child(2){
     background-repeat: no-repeat;
     background-size: 100% 100%;
     object-fit: cover;
@@ -553,8 +568,6 @@ body::-webkit-scrollbar-thumb {
     background: #000000b7;
 }
 
-
-
 .request-quote-section .request-form{
     position: absolute;
     top:70px;
@@ -567,15 +580,14 @@ body::-webkit-scrollbar-thumb {
     vertical-align: middle;
 }
 
-
 .request-button{
     position:fixed;
-    bottom:20px;
+    bottom:55px;
     right:20px;
     font-family: "Poppins";
     padding:5px 10px;
     border:1px transparent solid;
-    border-radius:10px;
+    border-radius:50px;
     background-color: var(--blue-color);
     color: var(--white-color);
     font-size: 1.2rem;
@@ -698,11 +710,11 @@ body::-webkit-scrollbar-thumb {
         width:75%;
     }
 
-    .residential-section{
+    .residential-section, .commercial-section{
         margin-top:var(--header-responsive-height);
     }
 
-    .residential-images{
+    .residential-images, .commercial-images{
         grid-template-columns: 1fr;
     }
 
@@ -711,5 +723,3 @@ body::-webkit-scrollbar-thumb {
     }
 
 }
-
-

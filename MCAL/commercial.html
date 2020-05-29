@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f8dcdb75b7.js" crossorigin="anonymous"></script>
+    <title>MCAL | Commercial</title>
+</head>
+<body>
+    <div class="container">
+        <header id="header-section" class="header">
+            <!-- BANNER -->
+            <div class="header-top">
+                <!-- LOGO -->
+                <div class="brand">
+                    <img src="img/logo.jpeg" alt="" class="logo">
+                    <h3 class="logo-text"><span style="color:#2B51B4">MICHEAL</span> <span style="color:#FF2B3E">CALAMUSA</span></h3>
+                </div>
+        
+                <!-- PHONE -->
+                <div class="header-phone">
+                    <h3>TORONTO   437-999-6225</h3>
+                    <h3>BELEVILLE 613-999-6225</h3>
+                </div>
+
+                <!-- MENU ICON -->
+                <span class="material-icons menu open-slide" onclick="openSlideMenu()">menu</span>
+            </div>
+            
+            <!-- NAVBAR MENU -->
+            <div class="navbar">
+                <ul class="navbar-items">
+                    <li class="navbar-item">HEATING/COOLING</li>
+                    <li class="navbar-item">IN-FLOOR HEATING</li>
+                    <li class="navbar-item">INDUSTRIAL REFRIGERATION</li>
+                    <li class="navbar-item">AIR QUALITY</li>
+                    <li class="navbar-item">CONTACT US</li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- SIDEBAR MENU -->
+        <div id="side-menu" class="side-nav">
+            <span class="btn-close" onclick="closeSlideMenu()">&times;</span>
+            <a href="#">HEATING/COOLING</a>
+            <a href="#">IN-FLOOR HEATING</a>
+            <a href="#">INDUSTRIAL REFRIGERATION</a>
+            <a href="#">AIR QUALITY</a>
+            <a href="#">CONTACT US</a>
+        </div>
+
+        <!-- COMMERCIAL SECTION -->
+        <section class="commercial-section">
+            <!-- HEADER -->
+            <div class="commercial-header">
+                <h2>COMMERCIAL PRODUCTS</h2>
+            </div>
+
+            <!-- CONTENT -->
+            <div class="commercial-content">
+                <div class="commercial-details">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                
+                <!-- IMAGES -->
+                <div class="commercial-images">
+                    <div class="commercial-image"></div>
+                    <div class="commercial-image"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REQUEST A QUOTE -->
+        <section class="request-quote-section" id="request-modal">
+                <div class="overlay2"></div>
+                <div class="close-btn-section">
+                    <span class="close-btn" id="close-btn">&times</span>
+                </div>
+                <div class="request-form">
+                    <div class="request-quote">
+                        <div class="request-quote-header">
+                            <h2>REQUEST A QUOTE</h2>
+                        </div>
+        
+                        <div class="request-quote-fields">
+                            <!-- NAME -->
+                            <div class="name-field">
+                                <input type="text" name="first-name" id="first-name" placeholder="First Name" class="request-input">
+                                <input type="text" name="last-name" id="last-name" placeholder="Last Name" class="request-input">
+                            </div>
+        
+                            <!-- PHONE -->
+                            <div class="phone-number-field">
+                                <input type="text" name="phone-number" id="phone-number" placeholder="Phone Number" class="request-input">
+                            </div>
+        
+                            <!-- EMAIL -->
+                            <div class="email-field">
+                                <input type="email" name="email" id="email" placeholder="Email" class="request-input">
+                            </div>
+        
+                            <!-- INTEREST -->
+                            <div class="interested-field">
+                                <select name="interested" id="interested" class="request-input">
+                                    <option value="Furnace">Furnace</option>
+                                    <option value="Boiler">Boiler</option>
+                                    <option value="Air Conditioning">Air Conditioning</option>
+                                    <option value="Ductless Air Condiioning">Ductless Air Condiioning</option>
+                                    <option value="Water Heater">Water Heater</option>
+                                    <option value="Tankless Water Heater">Tankless Water Heater</option>
+                                    <option value="Air Quality">Air Quality</option>
+                                    <option value="Infloor Heating">Infloor heating</option>
+                                </select>
+                            </div>
+        
+                            <!-- COMMENTS -->
+                            <div class="comments-field">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Comments" class="request-input"></textarea>
+                            </div>
+        
+                            <!-- SUBMIT -->
+                            <div class="submit">
+                                <input type="submit" value="Submit Quote"> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- REQUEST A QUOTE FLOATING ACTION BUTTON -->
+        <div class="request-quote-button">
+            <span class="request-button" id="request-button"><i class="material-icons">create</i></span>
+        </div>
+        
+        <!-- FOOTER -->
+        <footer id="footer-section" class="footer-section">
+            <div class="icons-container">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-twitter"></i>                
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- EXTERNAL JAVASCRIPT -->
+    <script src="js/main.js"></script>
+
+    <!-- SIDEBAR MENU JAVASCRIPT -->
+    <script>
+        function openSlideMenu(){
+            document.getElementById('side-menu').style.width='250px';
+        }
+        function closeSlideMenu(){
+            document.getElementById('side-menu').style.width='0';
+        }
+    </script>
+</body>
+</html>
