@@ -494,7 +494,7 @@ body::-webkit-scrollbar-thumb {
 
 /* ========================= RESIDENTIAL SECTION ================================ */
 
-.residential-section{
+.residential-section , .commercial-section{
     margin-top:var(--header-height);
     padding-top:30px;
     background-color: var(--white-color);
