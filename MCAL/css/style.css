@@ -4,9 +4,15 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 :root{
+    --light-red-color:#FF4051;
     --red-color: #FF2B3E;
     --white-color: #FFFDFD;
     --blue-color: #2B51B4;
@@ -85,6 +91,7 @@ body::-webkit-scrollbar-thumb {
 
 .menu{
     display:none;
+    outline:none;
 }
 
 .header-phone{
@@ -604,6 +611,95 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
 }
 
+/* ====================================== FURNACE SECTION ======================================== */
+
+.furnace-section{
+    margin-top: var(--header-height);
+    display:flex;
+    height:calc(100vh - var(--header-height));
+    overflow:hidden;
+}
+
+.left-navbar-section{
+    min-width: 250px;
+    height:calc(100vh - var(--header-height));
+    background-color: var(--light-red-color);
+}
+
+.left-navbar-item{
+    padding:25px;
+    color:var(--white-color);
+    font-weight:400;
+    border-bottom:2px solid rgb(219, 49, 64);
+}
+
+.left-navbar-item.active{
+    color:var(--red-color);
+    background-color: #FFFBFB;
+    font-weight: bold;
+}
+
+.right-content-section{
+    padding:40px 50px;
+    overflow: auto;
+}
+
+.right-content-header h2{
+    font-size:2rem;
+    color:var(--red-color);
+}
+
+.right-content-body{
+    margin-top:20px;
+}
+
+.buy-header h2{
+    font-size:1.3rem;
+}
+
+.buy-content{
+    margin-top:10px;
+    font-size:0.9rem;
+    line-height:1.5rem;
+}
+
+.faq{
+    margin-top:20px;
+}
+
+.buy-faq-header h2{
+    font-size:1.3rem;
+}
+
+.buy-faq-item{
+    margin-top:20px;
+}
+
+.buy-faq-question{
+    background-color: var(--red-color);
+    color:var(--white-color);
+    font-size:0.9rem;
+    font-weight: 400;
+    padding:25px;
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    align-items:center;
+}
+
+.buy-faq-question button{
+    background-color: var(--red-color);
+    color:var(--white-color);
+    border:none;
+    font-size:1.6rem;
+    justify-self: flex-end;
+}
+
+.buy-faq-answer{
+    font-size:0.8rem;
+    margin-top:15px;
+    line-height: 1.2rem;
+}
+
 /* ====================================== CONTACT TAB ============================================ */
 .contact-page .contact-section{
     margin-top:var(--header-height);
@@ -710,7 +806,7 @@ body::-webkit-scrollbar-thumb {
         width:75%;
     }
 
-    .residential-section, .commercial-section{
+    .residential-section, .commercial-section,.furnace-section{
         margin-top:var(--header-responsive-height);
     }
 
@@ -720,6 +816,10 @@ body::-webkit-scrollbar-thumb {
 
     .contact-page .contact-section{
         margin-top:var(--header-responsive-height);
+    }
+
+    .left-navbar-section{
+        display:none;
     }
 
 }
