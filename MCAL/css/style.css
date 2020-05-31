@@ -517,6 +517,7 @@ body::-webkit-scrollbar-thumb {
     padding:30px 50px;
     font-size:0.9rem;
     line-height:1.7rem;
+    text-align: justify;
 }
 
 .residential-images, .commercial-images{
@@ -649,12 +650,14 @@ body::-webkit-scrollbar-thumb {
     color:var(--red-color);
 }
 
-.right-content-body{
-    margin-top:20px;
-}
 
 .buy-header h2{
     font-size:1.3rem;
+    
+}
+
+.buy-item-body{
+    margin-top:10px;
 }
 
 .buy-content{
@@ -676,7 +679,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .buy-faq-question{
-    background-color: var(--red-color);
+    background-color: var(--light-red-color);
     color:var(--white-color);
     font-size:0.9rem;
     font-weight: 400;
@@ -687,7 +690,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .buy-faq-question button{
-    background-color: var(--red-color);
+    background-color: var(--light-red-color);
     color:var(--white-color);
     border:none;
     font-size:1.6rem;
@@ -794,7 +797,9 @@ body::-webkit-scrollbar-thumb {
 
     .gallery-images{
         grid-template-columns: 1fr;
+        grid-gap:10px;
     }
+
 
     .content{
         padding:10px 40px;
@@ -814,12 +819,31 @@ body::-webkit-scrollbar-thumb {
         grid-template-columns: 1fr;
     }
 
+    .residential-header,.commercial-header{
+        font-size:1rem;
+    }
+
+    .residential-content,.commercial-content{
+        font-size:0.8rem;
+        padding:25px;
+        text-align: justify;
+    }
+
+    .residential-images,.commercial-images{
+        justify-content: stretch;
+        width:100%;
+    }
+
     .contact-page .contact-section{
         margin-top:var(--header-responsive-height);
     }
 
     .left-navbar-section{
         display:none;
+    }
+
+    .right-content-section{
+        padding:40px 30px;
     }
 
 }
