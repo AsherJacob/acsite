@@ -50,4 +50,13 @@ document.getElementById('close-btn').addEventListener('click',function(){
     }
 });
 
-
+document.querySelectorAll('.tab-item').forEach(item => {
+    item.addEventListener('click', function (){
+      //handle click
+      ID = this.id;
+      document.getElementById('\''+ID+'-section').style.display = "none";
+      
+      /*if(document.getElementById('\''+ID+'-section').style.display = "flex"){
+        document.getElementById('\''+ID+'-section').style.display = "none";*/
+    })
+});

@@ -33,12 +33,12 @@
             <!-- NAVBAR MENU -->
             <div class="navbar">
                 <ul class="navbar-items">
-                    <li class="navbar-item"><a href="furnace.html">FURNACE</a></li>
-                    <li class="navbar-item">BOILER</li>
-                    <li class="navbar-item">AIR CONDITIONING</li>
-                    <li class="navbar-item">WATER HEATERS</li>
-                    <li class="navbar-item">AIR QUALITY</li>
-                    <li class="navbar-item"><a href="contact.html">CONTACT US</a></li>
+                    <li class="navbar-item tab-item" id="furnace">FURNACE</li>
+                    <li class="navbar-item tab-item" id="boiler">BOILER</li>
+                    <li class="navbar-item tab-item" id="air-conditioning">AIR CONDITIONING</li>
+                    <li class="navbar-item tab-item" id="water-heaters">WATER HEATERS</li>
+                    <li class="navbar-item tab-item" id="air-quality">AIR QUALITY</li>
+                    <li class="navbar-item tab-item" id="contact-us">CONTACT US</li>
                 </ul>
             </div>
         </header>
@@ -46,12 +46,14 @@
          <!-- SIDEBAR MENU -->
         <div id="side-menu" class="side-nav">
             <span class="btn-close" onclick="closeSlideMenu()">&times;</span>
-            <a href="#">FURNACE</a>
-            <a href="#">BOILER</a>
-            <a href="#">AIR CONDITIONING</a>
-            <a href="#">WATER HEATERS</a>
-            <a href="#">AIR QUALITY</a>
-            <a href="#">CONTACT US</a>
+            <ul>
+                <li class="tab-item" id="furnace">FURNACE</li>
+                <li class="tab-item" id="boiler">BOILER</li>
+                <li class="tab-item" id="air-conditioning">AIR CONDITIONING</li>
+                <li class="tab-item" id="water-heaters">WATER HEATERS</li>
+                <li class="tab-item" id="air-quality">AIR QUALITY</li>
+                <li class="tab-item" id="contact-us">CONTACT US</li>
+            </ul>
         </div>
         
         <!-- RESIDENTIAL SECTION -->
@@ -73,6 +75,98 @@
 
                     </div>
                     <div class="residential-image"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FURNACE SECTION -->
+        <section class="furnace-section">
+            <!-- LEFT NAVBAR SECTION -->
+            <div class="left-navbar-section">
+                <ul class="left-navbar">
+                    <li class="left-navbar-item active">Buy and install a new furnace</li>
+                    <li class="left-navbar-item">Rent a furnace</li>
+                    <li class="left-navbar-item">Annual maintenance</li>
+                </ul>
+            </div>
+
+            <!-- RIGHT CONTENT SECTION -->
+            <div class="right-content-section">
+                <div class="right-content-header">
+                    <h2>FURNACE</h2>
+                </div>
+
+                <div class="right-content-body">
+                    <!-- BUY SECTION -->
+                    <div class="buy-item-body">
+                        <div class="buy-header">
+                            <h2>Buy and install a new furnace</h2>
+                        </div>
+    
+                        <div class="buy-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iusto atque ex vel debitis accusantium excepturi commodi, voluptate ab qui, corrupti quis nemo rem mollitia laborum? Non quo consequatur, quae dicta sint earum id error quia placeat tempore? Quibusdam magni eaque aliquam corporis sed perferendis similique sunt iusto quae, pariatur quos aspernatur error voluptatum nihil quam non itaque aliquid quisquam ea totam debitis hic ullam. Velit voluptatibus nostrum ea officiis saepe sunt odit quia eum, dolor repudiandae iusto, nam consectetur.</p>
+                        </div>
+
+                        <div class="buy-faq faq">
+                            <div class="buy-faq-header">
+                                <h2>FAQ</h2>
+                            </div>
+
+                            <div class="buy-faq-content">
+                                <div class="buy-faq-item">
+                                    <div class="buy-faq-question">
+                                        <p class="question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, velit?</p>
+                                        <button class="show-answer">+</button>
+                                    </div>
+
+                                    <div class="buy-faq-answer">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa provident facilis incidunt facere quidem, tempore, numquam laborum aliquam alias, quam unde praesentium. Dicta harum asperiores nulla nemo architecto maiores non, eius eos corrupti, tempore libero ut quibusdam necessitatibus aspernatur voluptate.</p>
+                                    </div>
+                                </div>
+                                <div class="buy-faq-item">
+                                    <div class="buy-faq-question">
+                                        <p class="question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, velit?</p>
+                                        <button class="show-answer">+</button>
+                                    </div>
+
+                                    <div class="buy-faq-answer">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa provident facilis incidunt facere quidem, tempore, numquam laborum aliquam alias, quam unde praesentium. Dicta harum asperiores nulla nemo architecto maiores non, eius eos corrupti, tempore libero ut quibusdam necessitatibus aspernatur voluptate.</p>
+                                    </div>
+                                </div>
+                                <div class="buy-faq-item">
+                                    <div class="buy-faq-question">
+                                        <p class="question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, velit?</p>
+                                        <button class="show-answer">+</button>
+                                    </div>
+
+                                    <div class="buy-faq-answer">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa provident facilis incidunt facere quidem, tempore, numquam laborum aliquam alias, quam unde praesentium. Dicta harum asperiores nulla nemo architecto maiores non, eius eos corrupti, tempore libero ut quibusdam necessitatibus aspernatur voluptate.</p>
+                                    </div>
+                                </div>
+                                <div class="buy-faq-item">
+                                    <div class="buy-faq-question">
+                                        <p class="question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, velit?</p>
+                                        <button class="show-answer">+</button>
+                                    </div>
+
+                                    <div class="buy-faq-answer">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa provident facilis incidunt facere quidem, tempore, numquam laborum aliquam alias, quam unde praesentium. Dicta harum asperiores nulla nemo architecto maiores non, eius eos corrupti, tempore libero ut quibusdam necessitatibus aspernatur voluptate.</p>
+                                    </div>
+                                </div>
+                                <div class="buy-faq-item">
+                                    <div class="buy-faq-question">
+                                        <p class="question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, velit?</p>
+                                        <button class="show-answer">+</button>
+                                    </div>
+
+                                    <div class="buy-faq-answer">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa provident facilis incidunt facere quidem, tempore, numquam laborum aliquam alias, quam unde praesentium. Dicta harum asperiores nulla nemo architecto maiores non, eius eos corrupti, tempore libero ut quibusdam necessitatibus aspernatur voluptate.</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
