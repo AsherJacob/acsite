@@ -48,4 +48,15 @@ document.getElementById('close-btn').addEventListener('click',function(){
     if(document.getElementById('request-modal').style.display = "block"){
         document.getElementById('request-modal').style.display = "none";
     }
-})
+});
+
+document.querySelectorAll('.tab-item').forEach(item => {
+    item.addEventListener('click', function (){
+      //handle click
+      ID = this.id;
+      document.getElementById('\''+ID+'-section').style.display = "none";
+      
+      /*if(document.getElementById('\''+ID+'-section').style.display = "flex"){
+        document.getElementById('\''+ID+'-section').style.display = "none";*/
+    })
+  });
