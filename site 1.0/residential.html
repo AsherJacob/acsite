@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="https://kit.fontawesome.com/f8dcdb75b7.js" crossorigin="anonymous"></script>
+    <title>MCAL | Residential</title>
+</head>
+<body>
+    <div class="container">
+        <header id="header-section" class="header">
+            <!-- BANNER -->
+            <div class="header-top">
+                <!-- LOGO -->
+                <div class="brand">
+                    <img src="img/logo.jpeg" alt="" class="logo">
+                    <h3 class="logo-text"><span style="color:#2B51B4">MICHEAL</span> <span style="color:#FF2B3E">CALAMUSA</span></h3>
+                </div>
+        
+                <!-- PHONE -->
+                <div class="header-phone">
+                    <h3>TORONTO   437-999-6225</h3>
+                    <h3>BELEVILLE 613-999-6225</h3>
+                </div>
+                
+                <!-- MENU ICON -->
+                <span class="material-icons menu open-slide" onclick="openSlideMenu()">menu</span>
+            </div>
+            
+            <!-- NAVBAR MENU -->
+            <div class="navbar">
+                <ul class="navbar-items">
+                    <li class="navbar-item tab-item" id="furnace">FURNACE</li>
+                    <li class="navbar-item tab-item" id="boiler">BOILER</li>
+                    <li class="navbar-item tab-item" id="air-conditioning">AIR CONDITIONING</li>
+                    <li class="navbar-item tab-item" id="water-heaters">WATER HEATERS</li>
+                    <li class="navbar-item tab-item" id="air-quality">AIR QUALITY</li>
+                    <li class="navbar-item tab-item" id="contact-us">CONTACT US</li>
+                </ul>
+            </div>
+        </header>
+
+         <!-- SIDEBAR MENU -->
+        <div id="side-menu" class="side-nav">
+            <span class="btn-close" onclick="closeSlideMenu()">&times;</span>
+            <ul>
+                <li class="tab-item" id="furnace">FURNACE</li>
+                <li class="tab-item" id="boiler">BOILER</li>
+                <li class="tab-item" id="air-conditioning">AIR CONDITIONING</li>
+                <li class="tab-item" id="water-heaters">WATER HEATERS</li>
+                <li class="tab-item" id="air-quality">AIR QUALITY</li>
+                <li class="tab-item" id="contact-us">CONTACT US</li>
+            </ul>
+        </div>
+        
+        <!-- RESIDENTIAL SECTION -->
+        <section class="residential-section">
+            <!-- HEADER -->
+            <div class="residential-header">
+                <h2>RESIDENTIAL PRODUCTS</h2>
+            </div>
+
+            <!-- CONTENT -->
+            <div class="residential-content">
+                <div class="residential-details">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                
+                <!-- IMAGES -->
+                <div class="residential-images">
+                    <div class="residential-image">
+
+                    </div>
+                    <div class="residential-image"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REQUEST A QUOTE -->
+        <section class="request-quote-section" id="request-modal">
+                <div class="overlay2"></div>
+                <div class="close-btn-section">
+                    <span class="close-btn" id="close-btn">&times</span>
+                </div>
+                <div class="request-form">
+                    <div class="request-quote">
+                        <div class="request-quote-header">
+                            <h2>REQUEST A QUOTE</h2>
+                        </div>
+        
+                        <div class="request-quote-fields">
+                            <!-- NAME -->
+                            <div class="name-field">
+                                <input type="text" name="first-name" id="first-name" placeholder="First Name" class="request-input">
+                                <input type="text" name="last-name" id="last-name" placeholder="Last Name" class="request-input">
+                            </div>
+        
+                            <!-- PHONE -->
+                            <div class="phone-number-field">
+                                <input type="text" name="phone-number" id="phone-number" placeholder="Phone Number" class="request-input">
+                            </div>
+        
+                            <!-- EMAIL -->
+                            <div class="email-field">
+                                <input type="email" name="email" id="email" placeholder="Email" class="request-input">
+                            </div>
+        
+                            <!-- INTEREST -->
+                            <div class="interested-field">
+                                <select name="interested" id="interested" class="request-input">
+                                    <option value="Furnace">Furnace</option>
+                                    <option value="Boiler">Boiler</option>
+                                    <option value="Air Conditioning">Air Conditioning</option>
+                                    <option value="Ductless Air Condiioning">Ductless Air Condiioning</option>
+                                    <option value="Water Heater">Water Heater</option>
+                                    <option value="Tankless Water Heater">Tankless Water Heater</option>
+                                    <option value="Air Quality">Air Quality</option>
+                                    <option value="Infloor Heating">Infloor heating</option>
+                                </select>
+                            </div>
+        
+                            <!-- COMMENTS -->
+                            <div class="comments-field">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Comments" class="request-input"></textarea>
+                            </div>
+        
+                            <!-- SUBMIT -->
+                            <div class="submit">
+                                <input type="submit" value="Submit Quote"> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="furnace-section">
+
+            <!-- LEFT NAVBAR SECTION -->
+            <div class="left-navbar-section">
+                <ul class="left-navbar">
+                    <li class="left-navbar-item active">Buy and install a new furnace</li>
+                    <li class="left-navbar-item">Rent a furnace</li>
+                    <li class="left-navbar-item">Annual maintenance</li>
+                </ul>
+            </div>
+
+            <!-- RIGHT CONTENT SECTION -->
+            <div class="right-content-section">
+                <div class="right-content-header">
+                    <h2>FURNACE</h2>
+                </div>
+
+                <div class="right-content-body">
+                    <!-- BUY SECTION -->
+                    <div class="buy-item-body">
+                        <div class="buy-header">
+                            <h2>Buy and install a new furnace</h2>
+                        </div>
+    
+                        <div class="buy-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iusto atque ex vel debitis accusantium excepturi commodi, voluptate ab qui, corrupti quis nemo rem mollitia laborum? Non quo consequatur, quae dicta sint earum id error quia placeat tempore? Quibusdam magni eaque aliquam corporis sed perferendis similique sunt iusto quae, pariatur quos aspernatur error voluptatum nihil quam non itaque aliquid quisquam ea totam debitis hic ullam. Velit voluptatibus nostrum ea officiis saepe sunt odit quia eum, dolor repudiandae iusto, nam consectetur.</p>
+                        </div>
+
+                        <div class="buy-faq faq">
+                            <div class="buy-faq-header">
+                                <h2>FAQ</h2>
+                            </div>
+
+                            <div class="buy-faq-content">
+                                <div class="buy-faq-item">
+                                    <div class="buy-faq-question">
+                                        <p class="question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, velit?</p>
+                                        <button class="show-answer">+</button>
+                                    </div>
+
+                                    <div class="buy-faq-answer">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa provident facilis incidunt facere quidem, tempore, numquam laborum aliquam alias, quam unde praesentium. Dicta harum asperiores nulla nemo architecto maiores non, eius eos corrupti, tempore libero ut quibusdam necessitatibus aspernatur voluptate.</p>
+                                    </div>
+                                </div>
+                                <div class="buy-faq-item">
+                                    <div class="buy-faq-question">
+                                        <p class="question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, velit?</p>
+                                        <button class="show-answer">+</button>
+                                    </div>
+
+                                    <div class="buy-faq-answer">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa provident facilis incidunt facere quidem, tempore, numquam laborum aliquam alias, quam unde praesentium. Dicta harum asperiores nulla nemo architecto maiores non, eius eos corrupti, tempore libero ut quibusdam necessitatibus aspernatur voluptate.</p>
+                                    </div>
+                                </div>
+                                <div class="buy-faq-item">
+                                    <div class="buy-faq-question">
+                                        <p class="question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, velit?</p>
+                                        <button class="show-answer">+</button>
+                                    </div>
+
+                                    <div class="buy-faq-answer">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa provident facilis incidunt facere quidem, tempore, numquam laborum aliquam alias, quam unde praesentium. Dicta harum asperiores nulla nemo architecto maiores non, eius eos corrupti, tempore libero ut quibusdam necessitatibus aspernatur voluptate.</p>
+                                    </div>
+                                </div>
+                                <div class="buy-faq-item">
+                                    <div class="buy-faq-question">
+                                        <p class="question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, velit?</p>
+                                        <button class="show-answer">+</button>
+                                    </div>
+
+                                    <div class="buy-faq-answer">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa provident facilis incidunt facere quidem, tempore, numquam laborum aliquam alias, quam unde praesentium. Dicta harum asperiores nulla nemo architecto maiores non, eius eos corrupti, tempore libero ut quibusdam necessitatibus aspernatur voluptate.</p>
+                                    </div>
+                                </div>
+                                <div class="buy-faq-item">
+                                    <div class="buy-faq-question">
+                                        <p class="question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, velit?</p>
+                                        <button class="show-answer">+</button>
+                                    </div>
+
+                                    <div class="buy-faq-answer">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa provident facilis incidunt facere quidem, tempore, numquam laborum aliquam alias, quam unde praesentium. Dicta harum asperiores nulla nemo architecto maiores non, eius eos corrupti, tempore libero ut quibusdam necessitatibus aspernatur voluptate.</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-section" class="contact-section">
+            <div class="contact-header">
+                <h2>CONTACT US</h2>
+            </div>
+
+            <div class="content">
+                <!-- ADDRESS -->
+                <div class="address-details">
+                    <div class="address-icon">
+                        <span class="material-icons">location_on</span>
+                    </div>
+
+                    <div class="address-content">
+                        <h3>Address</h3>
+                        <p>45th West Avenue,<br>Boulevard of broken dreams,<br>Toronto</p>
+                    </div>
+                </div>
+
+                <!-- PHONE -->
+                <div class="phone-details">
+                    <div class="phone-icon">
+                        <span class="material-icons">local_phone</span>
+                    </div>
+
+                    <div class="phone-content">
+                        <h3>Phone</h3>
+                        <p>+1 (437) 999-6225</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GOOGLE MAP -->
+            <div class="map-section">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.28706382769!2d76.97914391377482!3d8.471441793908818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05baee7871dc6d%3A0x44f0c0fef4419c4f!2sPappanamcode%20KSRTC%20Bus%20Station!5e0!3m2!1sen!2sin!4v1590579571992!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;margin-top:20px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </section>
+
+        <!-- REQUEST A QUOTE FLOATING ACTION BUTTON -->
+        <div class="request-quote-button">
+            <span class="request-button" id="request-button"><i class="material-icons">create</i></span>
+        </div>
+        
+        <!-- FOOTER -->
+        <footer id="footer-section" class="footer-section">
+            <div class="icons-container">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-twitter"></i>                
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </footer>
+    </div>
+
+    <!-- EXTERNAL JAVASCRIPT -->
+    <script src="js/main.js"></script>
+
+    <!-- SIDEBAR MENU JAVASCRIPT -->
+    <script>
+        function openSlideMenu(){
+            document.getElementById('side-menu').style.marginLeft='0px';
+        }
+        function closeSlideMenu(){
+            document.getElementById('side-menu').style.marginLeft='-250px';
+        }
+    </script>
+</body>
+</html>
