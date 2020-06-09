@@ -52,9 +52,9 @@ body::-webkit-scrollbar-thumb {
 /*=============================Header==========================================*/
 
 .header{
-    position: absolute;
+    /* position:absolute;
     top:0;
-    left:0;
+    left:0; */
     display:block;
     width:100%;
     background-color: var(--white-color);
@@ -150,9 +150,9 @@ body::-webkit-scrollbar-thumb {
 
 /* ========================== SHOWCASE ============================================= */
 
-.showcase{
+/* .showcase{
     margin-top:var(--header-height);
-}
+} */
 
 
 .slider{
@@ -414,62 +414,125 @@ body::-webkit-scrollbar-thumb {
 
 /* ========================= RESIDENTIAL SECTION ================================ */
 
-.residential-section , .commercial-section{
-    margin-top:var(--header-height);
-    padding-top:30px;
+.residential-section{
     background-color: var(--white-color);
+    padding:20px 50px;
 }
 
-.residential-header, .commercial-header{
-    text-align: center;
-    font-size: 1.2rem;
-    color: #14329e;
+.residential-intro{
+    display:flex;
 }
 
-.residential-content, .commercial-content{
-    padding:30px 50px;
+.residential-call-now-image img{
+    width:170px;
+}
+
+.residential-call-now-button input{
+    width:100%;
+    font-family: var(--main-font);
+    padding:5px;
+    border:1px transparent solid;
+    background-color: var(--red-color);
+    color: var(--white-color);
+    font-size: 1.3rem;
+    font-weight:700;
+    margin-top:10px;
+}
+
+.residential-about{
+    padding:10px 0px 0px 40px;
+    text-align: justify;
+}
+
+.residential-about-header{
+    color:var(--red-color);
+    font-size:1.4rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.residential-about-content{
+    margin-top:20px;
+    font-weight:500;
+    line-height: 1.8rem;
     font-size:0.9rem;
-    line-height:1.7rem;
 }
 
-.residential-images, .commercial-images{
-    width:90%;
-    margin:auto;
+.residential-body{
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows:250px;
-    justify-content: center;
-    grid-gap:40px;
+    grid-template-columns: 75% 25%;
+    margin-top:70px;
+}
+
+.residential-services{
+    padding:0px 40px 0px 0px;
+    text-align: justify;
+}
+
+.residential-services-header h3{
+    font-size: 1.2rem;
+    font-weight:700;
+    color:var(--red-color);
+}
+
+.residential-service-header{
+    font-size: 1rem;
+    font-weight:700;
+    color:rgb(49, 49, 49);
+    margin-right:3px;
+}
+
+.residential-service{
+    margin-top:15px;
+    line-height:1.7rem;
+    font-size:0.9rem;
+    font-weight: 500;
+}
+
+.residential-big-buttons{
+    display:flex;
+    flex-direction: column;
+}
+
+.book-servicing-button button{
+    font-family: var(--main-font);
+    padding:40px 20px;
+    border:1px transparent solid;
+    background-color: var(--red-color);
+    color: var(--white-color);
+    font-size: 1.5rem;
+    font-weight:700;
+}
+
+.see-gallery-button button{
+    width:100%;
+    font-family: var(--main-font);
+    padding:40px 20px;
+    border:1px transparent solid;
+    background-image: url("../img/showcase.jpg");
+    background-size:cover;
+    object-fit: cover;
+    color: var(--white-color);
+    font-size: 1.5rem;
+    font-weight:700;
     margin-top:20px;
 }
 
-.residential-image:first-child{
-    background: url(../img/slider/slide-image-4.jpg);
+.sponsors-section{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:40px;
+    margin-bottom:50px;
+    /* flex-wrap: wrap; */
 }
 
-.commercial-image:first-child{
-    background: url(../img/slider/slide-image-3.jpg);
+
+
+.sponsor img{
+    width:140px;
 }
 
-.residential-image:first-child, .commercial-image:first-child{
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    object-fit: cover;
-}
-
-.residential-image:nth-child(2){
-    background: url(../img/slider/slide-image-4.jpg);
-}
-
-.commercial-image:nth-child(2){
-    background: url(../img/slider/slide-image-4.jpg);
-}
-
-.residential-image:nth-child(2), .commercial-image:nth-child(2){
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    object-fit: cover;
-}
 
 /* ========================= REQUEST MODAL ================================*/
 
@@ -690,33 +753,56 @@ body::-webkit-scrollbar-thumb {
        padding:40px 30px;
     }
 
-    .residential-box,.commercial-box{
-        display:block;
-        padding:30px 20px;
+    .residential-section{
+        padding:20px 20px;
     }
 
-    .footer-section{
-        padding:40px 30px;
+    .residential-intro{
+        flex-direction:column;
+        justify-content: space-between;
     }
 
-    .request-form .request-quote{
-        width:75%;
+    .residential-about{
+        order:1;
+        padding-left:0px;
     }
 
-    .residential-section, .commercial-section,.furnace-section{
-        margin-top:var(--header-responsive-height);
+    .residential-call-now{
+        order:2;
+        margin-top:20px;
     }
 
-    .residential-images, .commercial-images{
-        grid-template-columns: 1fr;
-    }
-
-    .contact-page .contact-section{
-        margin-top:var(--header-responsive-height);
-    }
-
-    .left-navbar-section{
+    .residential-call-now-image img{
         display:none;
+    }
+
+    .residential-call-now-button{
+        /* position:fixed;
+        bottom:20px;
+        right:20px; */
+    }
+
+    .residential-body{
+        display:block;
+    }
+
+    .residential-services{
+        padding-right:0px;
+    }
+
+    .residential-big-buttons{
+        margin-top:20px;
+    }
+
+    .sponsors-section{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-gap:20px;
+        justify-items: center;
+    }
+
+    .sponsor{
+        margin-top:20px;
     }
 
 }
