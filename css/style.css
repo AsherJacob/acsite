@@ -35,7 +35,7 @@ body{
 }
 
 body::-webkit-scrollbar-track {
-    background: rgb(27, 27, 27);
+    background: var(--input-gray-color);
   }
 
 body::-webkit-scrollbar-thumb {
