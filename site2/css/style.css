@@ -753,6 +753,10 @@ body::-webkit-scrollbar-thumb {
        padding:40px 30px;
     }
 
+    .residential-box, .commercial-box{
+        flex-direction: column;
+    }
+
     .residential-section{
         padding:20px 20px;
     }
