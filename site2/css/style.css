@@ -439,6 +439,18 @@ body::-webkit-scrollbar-thumb {
     margin-top:10px;
 }
 
+.commercial-call-now-button input{
+    width:100%;
+    font-family: var(--main-font);
+    padding:5px;
+    border:1px transparent solid;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    font-size: 1.3rem;
+    font-weight:700;
+    margin-top:10px;
+}
+
 .residential-about{
     padding:10px 0px 0px 40px;
     text-align: justify;
@@ -446,6 +458,13 @@ body::-webkit-scrollbar-thumb {
 
 .residential-about-header{
     color:var(--red-color);
+    font-size:1.4rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.commercial-about-header{
+    color:var(--blue-color);
     font-size:1.4rem;
     letter-spacing: 1px;
     font-weight: 700;
@@ -475,6 +494,12 @@ body::-webkit-scrollbar-thumb {
     color:var(--red-color);
 }
 
+.commercial-services-header h3{
+    font-size: 1.2rem;
+    font-weight:700;
+    color:var(--blue-color);
+}
+
 .residential-service-header{
     font-size: 1rem;
     font-weight:700;
@@ -499,6 +524,16 @@ body::-webkit-scrollbar-thumb {
     padding:40px 20px;
     border:1px transparent solid;
     background-color: var(--red-color);
+    color: var(--white-color);
+    font-size: 1.5rem;
+    font-weight:700;
+}
+
+.commercial-big-buttons .book-servicing-button button{
+    font-family: var(--main-font);
+    padding:40px 20px;
+    border:1px transparent solid;
+    background-color: var(--blue-color);
     color: var(--white-color);
     font-size: 1.5rem;
     font-weight:700;
@@ -795,6 +830,10 @@ body::-webkit-scrollbar-thumb {
     }
 
     .residential-big-buttons{
+        margin-top:20px;
+    }
+    
+    .commercial-big-buttons{
         margin-top:20px;
     }
 
