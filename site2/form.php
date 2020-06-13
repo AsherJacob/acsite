@@ -1,11 +1,10 @@
         <!-- form processing -->
         <?php
         // define variables and set to empty values
-        $fname = $lname = $phone = $email = $message = "";
+        $name = $phone = $email = $message = "";
         
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-          $fname = test_input($_POST["fname"]);
-          $lname = test_input($_POST["lname"]);
+          $name  = test_input($_POST["name"]);
           $phone = test_input($_POST["phone"]);
           $email = test_input($_POST["email"]);
           $message = test_input($_POST["message"]);
@@ -14,7 +13,7 @@
           $from = "quotes@mcalinc.ca";
           $email_subject = "New Quotation" ;
           $email_body = "You have received a new message ".
-                        " Here are the details:\n First Name: $fname \n Email: $email_address\n Message \n $message";
+                        " Here are the details:\nName: $name \nEmail: $email\nPhone: $phone \nMessage \n $message";
           $headers= "From: $from\n";
           $headers.= "Reply-To: $to";
           mail($to,$email_subject,$email_body,$headers);
