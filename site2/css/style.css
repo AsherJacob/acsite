@@ -299,8 +299,8 @@
     text-align: left;
 }
 
-.residential-services-header h3{
-    font-size: 1.2rem;
+.residential-services-header h2{
+    font-size: 1.4rem;
     font-weight:700;
     color:var(--red-color);
 }
@@ -312,8 +312,8 @@
 }
 
 .residential-service-header{
-    font-size: 1rem;
-    font-weight:700;
+    font-size: 1.1rem;
+    font-weight:800;
     color:rgb(49, 49, 49);
     margin-right:3px;
 }
