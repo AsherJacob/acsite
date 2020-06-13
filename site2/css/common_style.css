@@ -141,7 +141,7 @@ h3 {
     list-style-type:none;
     justify-content: space-between;
     display:flex;
-    font-size: 1rem;
+    font-size: 0.9rem;
     /* font-weight: normal; */
     padding:15px 50px;
     font-family:var(--main-font);

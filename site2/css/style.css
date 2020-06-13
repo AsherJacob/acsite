@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap'); */
 
 /* ========================== SHOWCASE ============================================= */
@@ -9,14 +10,15 @@
 
 .slider{
     position:relative;
-    height:calc(100vh - 340px);
+    height:calc(100vh - 300px);
     overflow:hidden;
 }
 
 .overlay{
+    visibility: hidden;
     width:100%;
     height:100%;
-    background: #000000b7;
+    background: #0000007a;
 }
 
 .slide{
@@ -58,6 +60,7 @@
     color: var(--white-color);
     font-size: 1.1rem;
     font-weight:800;
+    margin-top: 10px;
 }
 
 .slide:first-child{
@@ -86,7 +89,7 @@
 
 .about-header{
     color: var(--blue-color);
-
+    font-weight:900;
 }
 
 .about-content {
@@ -204,6 +207,7 @@
     color: var(--white-color);
     font-weight:700;
     margin-top:10px;
+    font-size:1.1rem;
 }
 
 .commercial-box-about-button input{
@@ -214,6 +218,7 @@
     color: var(--white-color);
     font-weight:700;
     margin-top:10px;
+    
 }
 
 /* ========================= RESIDENTIAL & COMMERCIALSECTION ================================ */
@@ -578,8 +583,16 @@
     }
 
     .slide-content{
-        width:50%;
+        width:70%;
         padding:10px 30px;
+    }
+
+    .overlay{
+        visibility: visible;
+    }
+
+    .slide:first-child{
+        background-position: 90% 50%;
     }
 
     .about-section{
