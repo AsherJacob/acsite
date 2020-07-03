@@ -382,7 +382,7 @@
 
 /* ========================= REQUEST MODAL ================================*/
 
-.request-quote-section{
+#request-modal{
     display:none;
     position:fixed;
     top:0px;
@@ -426,7 +426,8 @@
 
 .close-btn{
     position:absolute;
-    font-size:2rem;
+    z-index:6;
+    font-size:2.2rem;
     top:20px;
     right:20px;
     color: var(--white-color);
@@ -668,6 +669,10 @@
 
     .sponsor{
         margin-top:20px;
+    }
+
+    .request-form .request-quote{
+        width:75%;
     }
 
 }
