@@ -339,6 +339,7 @@
     color: var(--white-color);
     font-size: 1.5rem;
     font-weight:700;
+    cursor: pointer;
 }
 
 .commercial-big-buttons .book-servicing-button button{
@@ -350,6 +351,7 @@
     color: var(--white-color);
     font-size: 1.5rem;
     font-weight:700;
+    cursor:pointer;
 }
 
 .see-gallery-button button{
