@@ -105,7 +105,7 @@
                 </div>
 
                 <div class="residential-big-buttons">
-                    <div class="book-servicing-button">
+                    <div class="book-servicing-button" id="request-button">
                         <button>BOOK YOUR SEASONAL SERVICING</button>
                     </div>
                     
@@ -154,59 +154,50 @@
             </div>
         </footer>
 
-        <!-- REQUEST A QUOTE -->
+         <!-- REQUEST A QUOTE -->
         <section class="request-quote-section" id="request-modal">
                 <div class="overlay2"></div>
                 <div class="close-btn-section">
-                    <span class="close-btn" id="close-btn">&times</span>
+                    <span class="close-btn" id="close-btn"> &times; </span>
                 </div>
                 <div class="request-form">
                     <div class="request-quote">
-                        <div class="request-quote-header">
-                            <h2>REQUEST A QUOTE</h2>
-                        </div>
-        
-                        <div class="request-quote-fields">
-                            <!-- NAME -->
-                            <div class="name-field">
-                                <input type="text" name="first-name" id="first-name" placeholder="First Name" class="request-input">
-                                <input type="text" name="last-name" id="last-name" placeholder="Last Name" class="request-input">
+                        <form method="post" action="form.php" >
+                            <div class="request-quote-header">
+                                <h3>GET IN TOUCH</h3>
                             </div>
-        
-                            <!-- PHONE -->
-                            <div class="phone-number-field">
-                                <input type="text" name="phone-number" id="phone-number" placeholder="Phone Number" class="request-input">
+
+                            <div class="request-quote-fields">
+                                <!-- NAME -->
+                                <div class="name-field request-field">
+                                    <label>Name : *</label>
+                                    <input type="text" name="name" id="name" class="request-input" required >
+                                </div>
+
+                                <!-- PHONE -->
+                                <div class="phone-number-field request-field">
+                                    <label>Phone : *</label>
+                                    <input type="text" name="phone" id="phone" class="request-input" >
+                                </div>
+
+                                <!-- EMAIL -->
+                                <div class="email-field request-field">
+                                    <label>Email : *</label>
+                                    <input type="email" name="email" id="email" class="request-input" required>
+                                </div>
+
+                                <!-- COMMENTS -->
+                                <div class="comments-field request-field">
+                                    <label>Comments : *</label>
+                                    <textarea name="message" id="message" cols="30" rows="4" class="request-input" required></textarea>
+                                </div>
+
+                                <!-- SUBMIT -->
+                                <div class="submit">
+                                    <input type="submit" value="SEND"/>
+                                </div>
                             </div>
-        
-                            <!-- EMAIL -->
-                            <div class="email-field">
-                                <input type="email" name="email" id="email" placeholder="Email" class="request-input">
-                            </div>
-        
-                            <!-- INTEREST -->
-                            <div class="interested-field">
-                                <select name="interested" id="interested" class="request-input">
-                                    <option value="Furnace">Furnace</option>
-                                    <option value="Boiler">Boiler</option>
-                                    <option value="Air Conditioning">Air Conditioning</option>
-                                    <option value="Ductless Air Condiioning">Ductless Air Condiioning</option>
-                                    <option value="Water Heater">Water Heater</option>
-                                    <option value="Tankless Water Heater">Tankless Water Heater</option>
-                                    <option value="Air Quality">Air Quality</option>
-                                    <option value="Infloor Heating">Infloor heating</option>
-                                </select>
-                            </div>
-        
-                            <!-- COMMENTS -->
-                            <div class="comments-field">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Comments" class="request-input"></textarea>
-                            </div>
-        
-                            <!-- SUBMIT -->
-                            <div class="submit">
-                                <input type="submit" value="Submit Quote"> 
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
         </section>
