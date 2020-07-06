@@ -20,7 +20,7 @@
             <div class="header-top">
                 <!-- LOGO -->
                 <div class="brand">
-                    <a href="index.html"><img src="img/logo-4.jpeg" alt="" class="logo"></a>
+                    <a href="index.php"><img src="img/logo-4.jpeg" alt="" class="logo"></a>
                 </div>
                 <!-- PHONE -->
                 <div class="header-phone">
@@ -37,8 +37,8 @@
         <section class="navbar-section">
             <div class="navbar">
                 <ul class="navbar-items">
-                    <li class="navbar-item"><a href="residential.html">RESIDENTIAL</a></li>
-                    <li class="navbar-item"><a href="commercial.html">COMMERCIAL</a></li>
+                    <li class="navbar-item"><a href="residential.php">RESIDENTIAL</a></li>
+                    <li class="navbar-item"><a href="commercial.php">COMMERCIAL</a></li>
                     <li class="navbar-item">WHAT OUR CLIENT SAY</li>
                     <li class="navbar-item">CONTACT US</li>
                 </ul>
@@ -48,8 +48,8 @@
         <!-- SIDEBAR MENU -->
         <div id="side-menu" class="side-nav">
             <span class="btn-close" onclick="closeSlideMenu()">&times;</span>
-            <a href="residential.html">RESIDENTIAL</a>
-            <a href="commericial.html">COMMERCIAL</a>
+            <a href="residential.php">RESIDENTIAL</a>
+            <a href="commericial.php">COMMERCIAL</a>
             <a href="#">WHAT OUR CLIENTS SAY</a>
             <a href="#">CONTACT US</a>
         </div>
@@ -136,7 +136,7 @@
         <footer id="footer-section" class="footer-section">
             <div class="footer-content">
                 <div class="call-button">
-                    <input type="button" value="CALL NOW">
+                    <input type="button" onClick="window.location.href='tel:437-999-6225'" value="CALL NOW">
                 </div>
 
                 <div class="copyright">
@@ -160,7 +160,8 @@
                 </div>
                 <div class="request-form">
                     <div class="request-quote">
-                        <form name="quote" method="post"  >
+                        <iframe name="votar" style="display:none;"></iframe>
+                        <form name="quote" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" onsubmit="formAlert()" target="votar">
                             <div class="request-quote-header">
                                 <h3>GET IN TOUCH</h3>
                             </div>
@@ -192,13 +193,45 @@
 
                                 <!-- SUBMIT -->
                                 <div class="submit">
-                                    <input type="submit" value="SEND" onclick="trialfn()"/>
+                                    <input type="submit" value="SEND" />
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
         </section>
+
+        <!-- form processing -->
+        <?php
+        // define variables and set to empty values
+        $name = $phone = $email = $message = "";
+        
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+          $name  = test_input($_POST["name"]);
+          $phone = test_input($_POST["phone"]);
+          $email = test_input($_POST["email"]);
+          $message = test_input($_POST["message"]);
+          
+          $to = "asherjcb@gmail.com";
+          $from = "quotes@mcalinc.ca";
+          $email_subject = "New Quotation" ;
+          $email_body = "You have received a new message ".
+                        " Here are the details:\nName: $name \nEmail: $email\nPhone: $phone \nMessage \n $message";
+          $headers= "From: $from\n";
+          $headers.= "Reply-To: $to";
+          mail($to,$email_subject,$email_body,$headers);
+        //   ob_clean();
+        //   exit();
+          
+        }
+        
+        function test_input($data) {
+          $data = trim($data);
+          $data = stripslashes($data);
+          $data = htmlspecialchars($data);
+          return $data;
+        }
+        ?>
 
     
     </div>
@@ -216,9 +249,13 @@
         function closeSlideMenu(){
             document.getElementById('side-menu').style.marginLeft='-250px';
         }
-        function trialfn(){
+        
+        function formAlert(){
             var x = document.forms["quote"]["name"];
-            if(x != ""){
+            var y = document.forms["quote"]["email"];
+            var z = document.forms["quote"]["message"];
+        
+            if(x != "" && z != "" && y != ""){
                 document.getElementById('request-modal').style.display = "none";
                 Swal.fire({
                     icon: 'success',
@@ -228,6 +265,7 @@
             }
                 
         }
+
     </script>
 </body>
 </html>

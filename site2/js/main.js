@@ -61,3 +61,20 @@ document.querySelectorAll('.tab-item').forEach(item => {
     window.history.pushState('obj', 'newtitle', '/'+id);
     })
 });
+
+// ============== Form Alert =====================================
+function formAlert(){
+    var x = document.forms["quote"]["name"];
+    var y = document.forms["quote"]["email"];
+    var z = document.forms["quote"]["message"];
+
+    if(x != "" && z != "" && y != ""){
+        document.getElementById('request-modal').style.display = "none";
+        Swal.fire({
+            icon: 'success',
+            title: 'Thank You!',
+            text: 'We will get back to you shortly'
+        });
+    }
+        
+}

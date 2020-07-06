@@ -218,6 +218,7 @@
     color: var(--white-color);
     font-weight:700;
     margin-top:10px;
+    font-size: 1.1rem;
     
 }
 
@@ -359,7 +360,7 @@
     font-family: var(--main-font);
     padding:40px 20px;
     border:1px transparent solid;
-    background-image: url("../img/showcase.jpg");
+    background-image: url("../img/see-gallery.jpeg");
     background-size:cover;
     object-fit: cover;
     color: var(--white-color);
@@ -602,32 +603,32 @@
 }
 
 .commercial-gallery .commercial-gallery-item:nth-child(1) .commercial-gallery-item-image{
-    background-image: url("../img/residential-gallery/res-gal1.jpg");
+    background-image: url("../img/commercial-gallery/1.jpg");
     background-size: 100% 100%;
     object-fit: cover;
 }
 .commercial-gallery .commercial-gallery-item:nth-child(2) .commercial-gallery-item-image{
-    background-image: url("../img/residential-gallery/res-gal1.jpg");
+    background-image: url("../img/commercial-gallery/2.jpg");
     background-size: 100% 100%;
     object-fit: cover;
 }
 .commercial-gallery .commercial-gallery-item:nth-child(3) .commercial-gallery-item-image{
-    background-image: url("../img/residential-gallery/res-gal1.jpg");
+    background-image: url("../img/commercial-gallery/3.jpg");
     background-size: 100% 100%;
     object-fit: cover;
 }
 .commercial-gallery .commercial-gallery-item:nth-child(4) .commercial-gallery-item-image{
-    background-image: url("../img/residential-gallery/res-gal1.jpg");
+    background-image: url("../img/commercial-gallery/4.jpg");
     background-size: 100% 100%;
     object-fit: cover;
 }
 .commercial-gallery .commercial-gallery-item:nth-child(5) .commercial-gallery-item-image{
-    background-image: url("../img/residential-gallery/res-gal1.jpg");
+    background-image: url("../img/commercial-gallery/5.jpg");
     background-size: 100% 100%;
     object-fit: cover;
 }
 .commercial-gallery .commercial-gallery-item:nth-child(6) .commercial-gallery-item-image{
-    background-image: url("../img/residential-gallery/res-gal1.jpg");
+    background-image: url("../img/commercial-gallery/6.jpg");
     background-size: 100% 100%;
     object-fit: cover;
 }
