@@ -72,7 +72,7 @@
                         <h3>COMMERCIAL</h3>
                     </div>
                     <div class="residential-about-content">
-                        <p>We have decades of experice keeping businesses running. efficiently and comfortably. We work closely with engineers and their plans to develop the best solution to fit our customer's requirements and budget. We provide quotes you can understand, and walk you through our solutions so you undertand our recommendations. We take pride in well-crafted installation, thorough maintenance and reliable servicing. </p>
+                        <p>We have decades of experice keeping businesses running efficiently and comfortably. We work closely with engineers and their plans to develop the best solution to fit our customer's requirements and budget. We provide quotes you can understand, and walk you through our solutions so you undertand our recommendations. We take pride in well-crafted installation, thorough maintenance and reliable servicing. </p>
                     </div>
                </div>
            </div>
@@ -85,7 +85,7 @@
 
                     <div class="residential-service-list">
                         <div class="residential-service">
-                            <p><span class="residential-service-header">Air quality control.</span>We install UVC air purification systems within rooftop units and duct systems. designed to provide a healthier indoor environment by eliminating indoor pollutants such as viruses, mold and fungi. We also install stationery and portable HEPA filtres. </p>
+                            <p><span class="residential-service-header">Air quality control.</span>We install UVC air purification systems within rooftop units and duct systems, designed to provide a healthier indoor environment by eliminating indoor pollutants such as viruses, mold and fungi. We also install stationery and portable HEPA filters. </p>
                         </div>
                         <div class="residential-service">
                             <p><span class="residential-service-header">Boilers.</span>We are the boiler experts. We offer expertise in heating and cooling hydronics systems, stand-alone boilers, tankless water heaters and wall-hung combi systems. We hold Gas Fitter 1 licences, and are able to look atfer your highest BTU equipment. </p>

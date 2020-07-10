@@ -89,19 +89,19 @@
 
                     <div class="residential-service-list">
                         <div class="residential-service">
-                            <p><span class="residential-service-header">Geothermal systems.</span>We are certified geothermal contractors and are registered with the Geothermal Coalition. We install and service all makes and models of geothermal systems</p>
+                            <p><span class="residential-service-header">Geothermal systems.</span>We are certified geothermal contractors and are registered with the Geothermal Coalition. We install and service all makes and models of geothermal systems.</p>
                         </div>
                         <div class="residential-service">
-                            <p><span class="residential-service-header">Boilers.</span>We are the boiler experts. We offer expertise in heating and cooling hydronics systems, stand-alone boilers, tankless water heaters and wall-hung combi systems</p>
+                            <p><span class="residential-service-header">Boilers.</span>We are the boiler experts. We offer expertise in heating and cooling hydronics systems, stand-alone boilers, tankless water heaters and wall-hung combi systems.</p>
                         </div>
                         <div class="residential-service">
                             <p><span class="residential-service-header">Air quality control.</span>We install UVC air purification systems designed to provide a healthier indoor environment for you and your family by eliminating indoor pollutants such as viruses, mold and fungi.</p>
                         </div>
                         <div class="residential-service">
-                            <p><span class="residential-service-header">Ductless heat pumps.</span>A heat pump generates heat or cold by transferring heat from one place to another. In winter, it serves as a heating system, while in summer it serves as an air conditioning system. These slim units enable us to customize a solution unique to your home and are ideal for controlling the temperature in individual rooms</p>
+                            <p><span class="residential-service-header">Ductless heat pumps.</span>A heat pump generates heat or cold by transferring heat from one place to another. In winter, it serves as a heating system, while in summer it serves as an air conditioning system. These slim units enable us to customize a solution unique to your home and are ideal for controlling the temperature in individual rooms.</p>
                         </div>
                         <div class="residential-service">
-                            <p><span class="residential-service-header">Furnaces and air conditioning.</span>We have been installing and servicng furnaces and air conditioners for decades. we deal with all makes and models, and can recommend the best solution for you</p>
+                            <p><span class="residential-service-header">Furnaces and air conditioning.</span>We have been installing and servicing furnaces and air conditioners for decades. We deal with all makes and models, and can recommend the best solution for you.</p>
                         </div>
                     </div>
                 </div>
