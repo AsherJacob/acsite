@@ -547,6 +547,57 @@
    font-size: 1.8rem;
 }
 
+/* =================================== CONTACT =============================================== */
+
+.quote-contact-section{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top:30px;
+}
+
+.contact-section{
+    background-color: var(--white-color);
+    padding-top:30px;
+}
+
+.contact-header{
+    text-align: center;
+    font-size:0.8rem;
+    font-weight: bold;
+}
+
+.content{
+    display:grid;
+    padding:10px 70px;
+    margin:auto;
+}
+
+.address-details,.phone-details,.email-details{
+    display: flex;
+    padding:20px;
+}
+
+.address-icon span,.phone-icon span,.email-icon span{
+    font-size:2.2rem;
+}
+
+.address-content,.phone-content,.email-content{
+    margin-left:10px;
+    
+}
+
+.address-content h3,.phone-content h3,.email-content h3{
+    font-size:1.3rem;
+    color: var(--red-color);
+}
+
+.address-content p,.phone-content p,.email-content p{
+    margin-top:4px;
+    font-size:1rem;
+    font-weight:500;
+    line-height:1.5rem;
+}
+
 /* ======================================= RESIDENTIAL GALLERY ==================================== */
 
 .residential-gallery,.commercial-gallery{
@@ -780,4 +831,21 @@
         height:auto;
     }
 
+    .quote-contact-section{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .left-quote-section{
+        order:2;
+    }
+
+    .right-contact-section{
+        order:1;
+    }
+
+    .content{
+        justify-content: center;
+        padding-bottom:20px;
+    }
 }
