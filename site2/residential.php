@@ -40,7 +40,7 @@
                     <li class="navbar-item"><a href="residential.php">RESIDENTIAL</a></li>
                     <li class="navbar-item"><a href="commercial.php">COMMERCIAL</a></li>
                     <li class="navbar-item">WHAT OUR CLIENT SAY</li>
-                    <li class="navbar-item"><a href="contact.html">CONTACT US</a></li>
+                    <li class="navbar-item">CONTACT US</li>
                 </ul>
             </div>
         </section>
@@ -51,7 +51,7 @@
             <a href="residential.php">RESIDENTIAL</a>
             <a href="commercial.php">COMMERCIAL</a>
             <a href="#">WHAT OUR CLIENTS SAY</a>
-            <a href="contact.html">CONTACT US</a>
+            <a href="#">CONTACT US</a>
         </div>
         
         <!-- RESIDENTIAL SECTION -->
@@ -165,7 +165,7 @@
                 <div class="request-form">
                     <div class="request-quote">
                         <iframe name="votar" style="display:none;"></iframe>
-                        <form name="quote" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" onsubmit="formAlert()" target="votar">
+                        <form name="quote" id="myForm" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" onsubmit="formAlert()" target="votar">
                             <div class="request-quote-header">
                                 <h3>GET IN TOUCH</h3>
                             </div>
@@ -205,8 +205,8 @@
                 </div>
         </section>
 
-      <!-- form processing -->
-    <?php
+          <!-- form processing -->
+        <?php
         // define variables and set to empty values
         $name = $phone = $email = $message = "";
         
@@ -216,25 +216,29 @@
           $email = test_input($_POST["email"]);
           $message = test_input($_POST["message"]);
           
-          $to = "asherjcb@gmail.com";
+          $rec1 = "mcalinc@gmail.com";
+          $rec2 = "info@mcalinc.ca";
+          $rec3 = "asherjcb@gmail.com";
           $from = "quotes@mcalinc.ca";
-          $email_subject = "New Quotation" ;
-          $email_body = "You have received a new message ".
-                        " Here are the details:\nName: $name \nEmail: $email\nPhone: $phone \nMessage \n $message";
+          $email_subject = "New Quotation for MCAL" ;
+          $email_body = "You have received a new message\n".
+                        "Here are the details:\n\nName: $name \nEmail: $email\nPhone: $phone \n\nMessage\n$message";
           $headers= "From: $from\n";
+          $headers.= "CC: $rec2,$rec3\n";
           $headers.= "Reply-To: $to";
-          mail($to,$email_subject,$email_body,$headers);
+          mail($rec1,$email_subject,$email_body,$headers);
+        //   mail($rec2,$email_subject,$email_body,$headers);          
         //   ob_clean();
         //   exit();
           
         }
         
-        function test_input($data) {
+          function test_input($data) {
           $data = trim($data);
           $data = stripslashes($data);
           $data = htmlspecialchars($data);
           return $data;
-        }
+         }
     ?>
 
     </div>
@@ -265,6 +269,8 @@
                     text: 'We will get back to you shortly'
                 });
             }
+            
+            document.getElementbyID("myForm").reset();
                 
         }
     </script>
