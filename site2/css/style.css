@@ -549,12 +549,6 @@
 
 /* =================================== CONTACT =============================================== */
 
-.quote-contact-section{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top:30px;
-}
-
 .contact-section{
     background-color: var(--white-color);
     padding-top:30px;
@@ -564,17 +558,17 @@
     text-align: center;
     font-size:0.8rem;
     font-weight: bold;
+    color: var(--blue-color);
 }
 
-.content{
-    display:grid;
-    padding:10px 70px;
-    margin:auto;
+.contact-details{
+    display:flex;
+    justify-content: space-evenly;
+    padding-top:40px;
 }
 
 .address-details,.phone-details,.email-details{
     display: flex;
-    padding:20px;
 }
 
 .address-icon span,.phone-icon span,.email-icon span{
@@ -587,7 +581,7 @@
 }
 
 .address-content h3,.phone-content h3,.email-content h3{
-    font-size:1.3rem;
+    font-size:1.2rem;
     color: var(--red-color);
 }
 
@@ -597,6 +591,14 @@
     font-weight:500;
     line-height:1.5rem;
 }
+
+.quote-map-section{
+    padding-top:30px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
 
 /* ======================================= RESIDENTIAL GALLERY ==================================== */
 
@@ -831,21 +833,23 @@
         height:auto;
     }
 
-    .quote-contact-section{
-        display:flex;
-        flex-direction: column;
-    }
-
-    .left-quote-section{
-        order:2;
-    }
-
-    .right-contact-section{
-        order:1;
-    }
-
-    .content{
+    .contact-details{
+        display:grid;
         justify-content: center;
-        padding-bottom:20px;
+        grid-gap:50px;
+        margin-top:20px;
+        padding:30px;
+        /* background-color: var(--blue-color); */
     }
+
+    .quote-map-section{
+        padding-top:0px;
+        display:block;
+    }
+
+    /* .address-content h3,.phone-content h3,.email-content h3,.address-icon span,.phone-icon span,.email-icon span,.address-content p,.phone-content p,.email-content p{
+        color:rgb(216, 216, 216);
+    } */
+
+
 }
