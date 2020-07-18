@@ -39,7 +39,7 @@
             <a href="residential.php">RESIDENTIAL</a>
             <a href="commercial.php">COMMERCIAL</a>
             <a href="#">WHAT OUR CLIENTS SAY</a>
-            <a href="#">CONTACT US</a>
+            <a href="contact.html">CONTACT US</a>
         </div>
        
         <!-- SLIDESHOW -->
@@ -65,7 +65,7 @@
                         <li class="navbar-item"><a href="residential.php">RESIDENTIAL</a></li>
                         <li class="navbar-item"><a href="commercial.php">COMMERCIAL</a></li>
                         <li class="navbar-item">WHAT OUR CLIENT SAY</li>
-                        <li class="navbar-item">CONTACT US</li>
+                        <li class="navbar-item"><a href="contact.html">CONTACT US</a></li>
                     </ul>
                 </div>
             </section>
@@ -172,8 +172,9 @@
             </div>
         </section>
         
+
           <!-- form processing -->
-        <?php
+          <?php
         // define variables and set to empty values
         $name = $phone = $email = $message = "";
         
@@ -186,17 +187,23 @@
           $rec1 = "mcalinc@gmail.com";
           $rec2 = "info@mcalinc.ca";
           $rec3 = "asherjcb@gmail.com";
+          $rec4 = "asherjacob@live.in";
+          $rec5 = "asherjac@protonmail.com";
+          
+          
+          
           $from = "quotes@mcalinc.ca";
           $email_subject = "New Quotation for MCAL" ;
           $email_body = "You have received a new message\n".
                         "Here are the details:\n\nName: $name \nEmail: $email\nPhone: $phone \n\nMessage\n$message";
+                        
           $headers= "From: $from\n";
-          $headers.= "CC: $rec2,$rec3\n";
-          $headers.= "Reply-To: $to";
+          $headers.= "CC: $rec2, $rec3\n";
+    
           mail($rec1,$email_subject,$email_body,$headers);
-        //   mail($rec2,$email_subject,$email_body,$headers);          
-        //   ob_clean();
-        //   exit();
+           
+          ob_clean();
+          exit();
           
         }
         
@@ -253,8 +260,12 @@
                     text: 'We will get back to you shortly'
                 });
             }
+
+            const sleep = (milliseconds) => {
+                return new Promise(resolve => setTimeout(resolve, milliseconds))
+            };
             
-            document.getElementById("myForm").reset();
+            sleep(1000).then(() => document.getElementById("myForm").reset());
                 
         }
     </script>
