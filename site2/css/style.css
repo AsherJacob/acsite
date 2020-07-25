@@ -598,6 +598,11 @@
     grid-template-columns: 1fr 1fr;
 }
 
+.map-section{
+    width:100%;
+    height:100%;
+}
+
 
 
 /* ======================================= RESIDENTIAL GALLERY ==================================== */
@@ -614,10 +619,8 @@
     margin-top:15px;
 }
 
-.residential-gallery-item-image,.commercial-gallery-item-image{
+.residential-gallery-item-image img,.commercial-gallery-item-image img{
     width:100%;
-    height:auto;
-    padding-bottom: 56.25%;
 }
 
 .residential-gallery-item-about-content,.commercial-gallery-item-about-content{
@@ -627,10 +630,10 @@
     font-weight: 500;
 }
 
-.residential-gallery .residential-gallery-item:nth-child(1) .residential-gallery-item-image{
+/* .residential-gallery .residential-gallery-item:nth-child(1) .residential-gallery-item-image{
     background-image: url("../img/residential-gallery/res-gal1.jpg");
     background-size: 100% 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 .residential-gallery .residential-gallery-item:nth-child(2) .residential-gallery-item-image{
     background-image: url("../img/residential-gallery/res-gal2.jpg");
@@ -639,7 +642,7 @@
 }
 .residential-gallery .residential-gallery-item:nth-child(3) .residential-gallery-item-image{
     background-image: url("../img/residential-gallery/res-gal3.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
     object-fit: cover;
 }
 .residential-gallery .residential-gallery-item:nth-child(4) .residential-gallery-item-image{
@@ -649,16 +652,16 @@
 }
 .residential-gallery .residential-gallery-item:nth-child(5) .residential-gallery-item-image{
     background-image: url("../img/residential-gallery/res-gal5.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
     object-fit: cover;
 }
 .residential-gallery .residential-gallery-item:nth-child(6) .residential-gallery-item-image{
     background-image: url("../img/residential-gallery/res-gal6.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
     object-fit: cover;
-}
+} */
 
-.commercial-gallery .commercial-gallery-item:nth-child(1) .commercial-gallery-item-image{
+/* .commercial-gallery .commercial-gallery-item:nth-child(1) .commercial-gallery-item-image{
     background-image: url("../img/commercial-gallery/1.jpg");
     background-size: 100% 100%;
     object-fit: cover;
@@ -687,7 +690,7 @@
     background-image: url("../img/commercial-gallery/6.jpg");
     background-size: 100% 100%;
     object-fit: cover;
-}
+} */
 
 /* ===================================== RESPONSIVENESS ============================================ */
 
@@ -830,7 +833,7 @@
     }
 
     .residential-gallery-item-image,.commercial-gallery-item-image{
-        height:auto;
+        height:100%;
     }
 
     .contact-details{
@@ -847,9 +850,8 @@
         display:block;
     }
 
-    /* .address-content h3,.phone-content h3,.email-content h3,.address-icon span,.phone-icon span,.email-icon span,.address-content p,.phone-content p,.email-content p{
-        color:rgb(216, 216, 216);
-    } */
-
+    .map-section{
+        height:450px;
+    }
 
 }
