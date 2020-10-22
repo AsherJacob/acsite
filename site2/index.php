@@ -174,8 +174,8 @@
         
 
           <!-- form processing -->
-          <?php
-        // define variables and set to empty values
+        <?php
+        //define variables and set to empty values
         $name = $phone = $email = $message = "";
         
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
