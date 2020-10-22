@@ -40,7 +40,7 @@
                     <li class="navbar-item"><a href="residential.php">RESIDENTIAL</a></li>
                     <li class="navbar-item"><a href="commercial.php">COMMERCIAL</a></li>
                     <li class="navbar-item">WHAT OUR CLIENT SAY</li>
-                    <li class="navbar-item"><a href="contact.html">CONTACT US</a></li>
+                    <li class="navbar-item"><a href="contact.php">CONTACT US</a></li>
                 </ul>
             </div>
         </section>
@@ -51,7 +51,7 @@
             <a href="residential.php">RESIDENTIAL</a>
             <a href="commercial.php">COMMERCIAL</a>
             <a href="#">WHAT OUR CLIENTS SAY</a>
-            <a href="contact.html">CONTACT US</a>
+            <a href="contact.php">CONTACT US</a>
         </div>
         
         <!-- RESIDENTIAL SECTION -->

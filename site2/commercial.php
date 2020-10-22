@@ -40,7 +40,7 @@
                     <li class="navbar-item"><a href="residential.php">RESIDENTIAL</a></li>
                     <li class="navbar-item"><a href="commercial.php">COMMERCIAL</a></li>
                     <li class="navbar-item">WHAT OUR CLIENT SAY</li>
-                    <li class="navbar-item"><a href="contact.html">CONTACT US</a></li>
+                    <li class="navbar-item"><a href="contact.php">CONTACT US</a></li>
                 </ul>
             </div>
         </section>
@@ -51,7 +51,7 @@
             <a href="residential.php">RESIDENTIAL</a>
             <a href="commericial.php">COMMERCIAL</a>
             <a href="#">WHAT OUR CLIENTS SAY</a>
-            <a href="contact.html">CONTACT US</a>
+            <a href="contact.php">CONTACT US</a>
         </div>
         
         <!-- COMMERCIAL SECTION -->
@@ -72,7 +72,7 @@
                         <h3>COMMERCIAL</h3>
                     </div>
                     <div class="residential-about-content">
-                        <p>We have decades of experice keeping businesses running efficiently and comfortably. We work closely with engineers and their plans to develop the best solution to fit our customer's requirements and budget. We provide quotes you can understand, and walk you through our solutions so you undertand our recommendations. We take pride in well-crafted installation, thorough maintenance and reliable servicing. </p>
+                        <p>We have decades of experience keeping businesses running efficiently and comfortably. We work closely with engineers and their plans to develop the best solution to fit our customer's requirements and budget. We provide quotes you can understand, and walk you through our solutions so you understand our recommendations. We take pride in well-crafted installation, thorough maintenance and reliable servicing. </p>
                     </div>
                </div>
            </div>
@@ -152,6 +152,12 @@
             </div>
         </footer>
         
+        <!--clear form script-->
+        <script>
+                function clearForm(){
+                    document.getElementById("myForm").reset();
+                }
+        </script>
 
         <!-- REQUEST A QUOTE -->
         <section class="request-quote-section" id="request-modal">
@@ -203,7 +209,7 @@
         </section>
 
           <!-- form processing -->
-          <?php
+        <?php
         // define variables and set to empty values
         $name = $phone = $email = $message = "";
         
@@ -278,6 +284,8 @@
             };
             
             sleep(1000).then(() => document.getElementById("myForm").reset());
+            
+            
                 
         }
 
