@@ -829,7 +829,9 @@
     }
 
     .residential-gallery,.commercial-gallery{
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr; */
+        display: flex;
+        flex-direction: column;
     }
 
     .residential-gallery-item-image,.commercial-gallery-item-image{
